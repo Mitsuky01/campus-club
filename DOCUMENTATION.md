@@ -32,7 +32,7 @@ npm run dev
 
 4. **Open in browser**
 ```
-http://localhost:5173
+http://localhost:
 ```
 
 ---
@@ -80,7 +80,8 @@ public/
 - Each card includes image, title, and short description
 - Click card to open detail page
 
-📸 *Screenshot:* `screenshots/clubs-list.png`
+📸 *Screenshot:* `screenshots/club.png`
+📸 *Screenshot:* `screenshots/club-sorted.png`
 
 ---
 
@@ -95,7 +96,7 @@ public/
 - After joining, stored in `localStorage` and shows a confirmation message
 
 📸 *Screenshot:* `screenshots/club-detail.png`  
-📸 *Screenshot:* `screenshots/joined-state.png`
+📸 *Screenshot:* `screenshots/club-joined.png`
 
 ---
 
@@ -111,7 +112,7 @@ public/
 
 - Custom 404 page with link to go back
 
-📸 *Screenshot:* `screenshots/404.png`
+📸 *Screenshot:* `screenshots/not-found.png`
 
 ---
 
