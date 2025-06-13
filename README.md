@@ -1,13 +1,87 @@
-# React + Vite
+# 📘 Documentation: Campus Club Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Campus Club Finder is a single-page application (SPA) built with React, Vite, and Tailwind CSS. It helps students find and join student clubs.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📍 Initial State
 
-## Expanding the ESLint configuration
+When you open the app, you land on the **Home Page**:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# campus-club
+- A welcome message
+- A CTA button to explore clubs
+
+---
+
+## 🧭 Pages Walkthrough
+
+### 🏠 Home Page (`/`)
+
+- Hero section with heading and description
+- CTA button: **Explore Clubs** → goes to `/clubs`
+
+📷 Screenshot: `screenshots/home.png`
+
+---
+
+### 📋 Clubs Page (`/clubs`)
+
+- Displays all 5 clubs in a responsive grid
+- Sorting options: Name A–Z and Z–A
+- Each club card shows:
+  - Image
+  - Name
+  - Short description
+  - Clickable card → navigates to `/clubs/:clubId`
+
+📷 Screenshot: `screenshots/clubs-grid.png`
+📷 Screenshot: `screenshots/clubs-sorted.png`
+
+---
+
+### 📄 Club Detail Page (`/clubs/:clubId`)
+
+- Displays:
+  - Big image
+  - Full description
+  - Upcoming events (at least 2)
+  - "Join Club" button (persists via localStorage)
+- If already joined, shows a confirmation message instead
+
+📷 Screenshot: `screenshots/club-detail.png`
+📷 Screenshot: `screenshots/joined-club.png`
+
+---
+
+### ℹ️ About Page (`/about`)
+
+- Describes the purpose of the app
+- Lists technologies used
+
+📷 Screenshot: `screenshots/about.png`
+
+---
+
+### ❌ 404 Page
+
+- Displays friendly error message
+- Provides button to go back to home
+
+📷 Screenshot: `screenshots/404.png`
+
+---
+
+## 💾 Features Summary
+
+- [x] Functional Components & Hooks
+- [x] Routing with React Router
+- [x] Tailwind CSS for styling
+- [x] Sorting (A–Z / Z–A)
+- [x] View toggle (optional)
+- [x] Persist join club state via `localStorage`
+- [x] Fully responsive layout
+
+---
+
+## 📂 Folder Structure
+
