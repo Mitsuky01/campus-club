@@ -4,6 +4,7 @@ export default function About() {
       <h2 className="text-xl font-bold">About</h2>
       <p>This app helps students find and join university clubs.</p>
       <p>Built with React, Vite, and Tailwind CSS.</p>
+      <p>Built by Raditya Tamam - 2502049353</p>
     </div>
   )
 }
