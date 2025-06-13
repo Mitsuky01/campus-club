@@ -69,7 +69,7 @@ public/
 - Button to explore clubs
 - Tailwind-styled layout
 
-📸 *Screenshot:* `screenshots/home.png`
+📸 *Screenshot:* ![Home Page](screenshots/home.png)
 
 ---
 
@@ -80,8 +80,8 @@ public/
 - Each card includes image, title, and short description
 - Click card to open detail page
 
-📸 *Screenshot:* `screenshots/club.png`
-📸 *Screenshot:* `screenshots/club-sorted.png`
+📸 *Screenshot:* ![Clubs Page](screenshots/club.png)
+📸 *Screenshot:* ![Clubs Sorted](screenshots/club-sorted.png)
 
 ---
 
@@ -95,8 +95,8 @@ public/
 - Includes a **Join Club** button
 - After joining, stored in `localStorage` and shows a confirmation message
 
-📸 *Screenshot:* `screenshots/club-detail.png`  
-📸 *Screenshot:* `screenshots/club-joined.png`
+📸 *Screenshot:* ![Club Detail](screenshots/club-detail.png)  
+📸 *Screenshot:* ![Joined State](screenshots/club-joined.png)
 
 ---
 
@@ -104,7 +104,7 @@ public/
 
 - Description of the app and tech used
 
-📸 *Screenshot:* `screenshots/about.png`
+📸 *Screenshot:* ![About Page](screenshots/about.png)
 
 ---
 
@@ -112,7 +112,7 @@ public/
 
 - Custom 404 page with link to go back
 
-📸 *Screenshot:* `screenshots/not-found.png`
+📸 *Screenshot:* ![404 Page](screenshots/not-found.png)
 
 ---
 
@@ -133,7 +133,7 @@ public/
 - No backend; all data is local
 - State is stored using `useState` and `localStorage`
 - Images are stored in `public/images`
-- Screenshots stored in `public/screenshots`
+- Screenshots stored in `/screenshots`
 
 ---
 
