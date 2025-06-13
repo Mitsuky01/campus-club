@@ -1,77 +1,121 @@
 # 📘 Documentation: Campus Club Finder
 
-Campus Club Finder is a single-page application (SPA) built with React, Vite, and Tailwind CSS. It helps students find and join student clubs.
+Campus Club Finder is a single-page web application that allows university students to browse, view, and join various student clubs on campus.
+
+Built using:
+
+- ⚛️ React (with Functional Components and Hooks)
+- ⚡ Vite (as the development and build tool)
+- 🎨 Tailwind CSS (for styling)
+- 🧭 React Router (for navigation)
+- 💾 localStorage (to save join status)
 
 ---
 
-## 📍 Initial State
+## 🚀 How to Run the App
 
-When you open the app, you land on the **Home Page**:
+1. **Clone the repository**
+```bash
+git clone https://github.com/Mitsuky01/campus-club.git
+cd campus-club
+```
 
-- A welcome message
-- A CTA button to explore clubs
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Start development server**
+```bash
+npm run dev
+```
+
+4. **Open in browser**
+```
+http://localhost:5173
+```
 
 ---
 
-## 🧭 Pages Walkthrough
+## 📂 Folder Structure
+
+```
+src/
+├── App.jsx
+├── main.jsx
+├── index.css
+├── data/
+│   └── clubs.js
+├── components/
+│   └── Navbar.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Clubs.jsx
+│   ├── ClubDetail.jsx
+│   ├── About.jsx
+│   └── NotFound.jsx
+public/
+├── images/          ← contains all club images
+├── screenshots/     ← contains documentation screenshots
+```
+
+---
+
+## 🧭 Application Walkthrough
 
 ### 🏠 Home Page (`/`)
 
-- Hero section with heading and description
-- CTA button: **Explore Clubs** → goes to `/clubs`
+- Landing page introducing the app
+- Button to explore clubs
+- Tailwind-styled layout
 
-📷 Screenshot: `screenshots/home.png`
+📸 *Screenshot:* `screenshots/home.png`
 
 ---
 
 ### 📋 Clubs Page (`/clubs`)
 
-- Displays all 5 clubs in a responsive grid
-- Sorting options: Name A–Z and Z–A
-- Each club card shows:
-  - Image
-  - Name
-  - Short description
-  - Clickable card → navigates to `/clubs/:clubId`
+- Displays all clubs in grid
+- Sort dropdown (A–Z / Z–A)
+- Each card includes image, title, and short description
+- Click card to open detail page
 
-📷 Screenshot: `screenshots/clubs-grid.png`
-📷 Screenshot: `screenshots/clubs-sorted.png`
+📸 *Screenshot:* `screenshots/clubs-list.png`
 
 ---
 
 ### 📄 Club Detail Page (`/clubs/:clubId`)
 
-- Displays:
-  - Big image
-  - Full description
-  - Upcoming events (at least 2)
-  - "Join Club" button (persists via localStorage)
-- If already joined, shows a confirmation message instead
+- Shows full club details:
+  - Title
+  - Image
+  - Description
+  - Upcoming events
+- Includes a **Join Club** button
+- After joining, stored in `localStorage` and shows a confirmation message
 
-📷 Screenshot: `screenshots/club-detail.png`
-📷 Screenshot: `screenshots/joined-club.png`
+📸 *Screenshot:* `screenshots/club-detail.png`  
+📸 *Screenshot:* `screenshots/joined-state.png`
 
 ---
 
 ### ℹ️ About Page (`/about`)
 
-- Describes the purpose of the app
-- Lists technologies used
+- Description of the app and tech used
 
-📷 Screenshot: `screenshots/about.png`
-
----
-
-### ❌ 404 Page
-
-- Displays friendly error message
-- Provides button to go back to home
-
-📷 Screenshot: `screenshots/404.png`
+📸 *Screenshot:* `screenshots/about.png`
 
 ---
 
-## 💾 Features Summary
+### ❌ Not Found Page (`*`)
+
+- Custom 404 page with link to go back
+
+📸 *Screenshot:* `screenshots/404.png`
+
+---
+
+## ✅ Features Checklist
 
 - [x] Functional Components & Hooks
 - [x] Routing with React Router
@@ -83,5 +127,16 @@ When you open the app, you land on the **Home Page**:
 
 ---
 
-## 📂 Folder Structure
+## 🔐 Notes
 
+- No backend; all data is local
+- State is stored using `useState` and `localStorage`
+- Images are stored in `public/images`
+- Screenshots stored in `public/screenshots`
+
+---
+
+## 📝 Author
+
+> Created by [@Mitsuky01](https://github.com/Mitsuky01)  
+For educational use only.
